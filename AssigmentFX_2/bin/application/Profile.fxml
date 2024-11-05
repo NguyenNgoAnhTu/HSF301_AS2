@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="700.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProfileController">
+   <children>
+      <TextField id="txtName" fx:id="txtName" layoutX="121.0" layoutY="114.0" prefHeight="25.0" prefWidth="173.0" />
+      <Label layoutX="259.0" layoutY="23.0" prefHeight="54.0" prefWidth="182.0" text="User Profile">
+         <font>
+            <Font name="Arial" size="25.0" />
+         </font>
+      </Label>
+      <TextField id="txtMobile" fx:id="txtMobile" layoutX="121.0" layoutY="200.0" prefHeight="25.0" prefWidth="173.0" />
+      <DatePicker id="txtBirthday" fx:id="txtBirthday" layoutX="121.0" layoutY="275.0" prefHeight="25.0" prefWidth="173.0" />
+      <TextField id="txtIdentityCard" fx:id="txtIdentityCard" layoutX="447.0" layoutY="114.0" prefHeight="25.0" prefWidth="198.0" />
+      <TextField id="txtLicenceNumber" fx:id="txtLicenceNumber" layoutX="447.0" layoutY="200.0" prefHeight="25.0" prefWidth="198.0" />
+      <DatePicker id="txtLicenceDay" fx:id="txtLicenceDay" layoutX="447.0" layoutY="275.0" prefHeight="25.0" prefWidth="198.0" />
+      <Label layoutX="40.0" layoutY="116.0" prefHeight="17.0" prefWidth="40.0" text="Name" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="202.0" prefHeight="21.0" prefWidth="49.0" text="Mobile" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="277.0" prefHeight="21.0" prefWidth="60.0" text="Birthday" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="326.0" layoutY="116.0" prefHeight="21.0" prefWidth="90.0" text="Identity Card" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="326.0" layoutY="202.0" prefHeight="21.0" prefWidth="113.0" text="Licence Number" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="326.0" layoutY="277.0" prefHeight="21.0" prefWidth="113.0" text="Licence Date" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button id="btnUpdate" fx:id="btnUpdate" layoutX="286.0" layoutY="356.0" mnemonicParsing="false" onAction="#btnUpdateAction" prefHeight="36.0" prefWidth="113.0" style="-fx-background-color: #33FFBA;" text="Update">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font></Button>
+     
+      <Label id="noti" fx:id="noti" layoutX="207.0" layoutY="491.0" prefHeight="36.0" prefWidth="328.0" textAlignment="CENTER" textFill="#d90505">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="381.0" prefWidth="618.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignupController">
+   <children>
+      <TextField id="txtName" fx:id="txtName" layoutX="141.0" layoutY="65.0" />
+      <TextField id="txtMobile" fx:id="txtMobile" layoutX="141.0" layoutY="116.0" />
+      <TextField id="txtEmail" fx:id="txtEmail" layoutX="141.0" layoutY="166.0" />
+      <TextField id="txtAccountName" fx:id="txtAccountName" layoutX="452.0" layoutY="65.0" />
+      <TextField id="txtIdentityCard" fx:id="txtIdentityCard" layoutX="452.0" layoutY="116.0" />
+      <TextField id="txtLicenceNumber" fx:id="txtLicenceNumber" layoutX="452.0" layoutY="166.0" />
+      <DatePicker id="txtBirthday" fx:id="txtBirthday" layoutX="141.0" layoutY="214.0" prefHeight="25.0" prefWidth="149.0" />
+      <ComboBox id="txtRole" fx:id="txtRole" layoutX="141.0" layoutY="255.0" prefWidth="150.0" />
+      <Label layoutX="32.0" layoutY="64.0" prefHeight="26.0" prefWidth="57.0" text="Name">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="116.0" prefHeight="26.0" prefWidth="57.0" text="Mobile">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="166.0" prefHeight="26.0" prefWidth="57.0" text="Email">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="64.0" prefHeight="26.0" prefWidth="121.0" text="Account Name">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <DatePicker id="txtLicenceDate" fx:id="txtLicenceDate" layoutX="452.0" layoutY="255.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="316.0" layoutY="116.0" prefHeight="26.0" prefWidth="109.0" text="Identity Card">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="166.0" prefHeight="26.0" prefWidth="127.0" text="Licence Number">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="213.0" prefHeight="26.0" prefWidth="127.0" text="Password">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="214.0" prefHeight="26.0" prefWidth="109.0" text="Birthday">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="315.0" layoutY="255.0" prefHeight="26.0" prefWidth="109.0" text="Licence Date">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="255.0" prefHeight="26.0" prefWidth="109.0" text="Role">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <PasswordField id="txtPassword" fx:id="txtPassword" layoutX="452.0" layoutY="214.0" />
+      <Label layoutX="258.0" layoutY="14.0" text="Sign Up" textFill="#07c76d">
+         <font>
+            <Font name="Arial" size="29.0" />
+         </font>
+      </Label>
+      <Button id="btnLogin" fx:id="btnSignup" layoutX="266.0" layoutY="325.0" mnemonicParsing="false" onAction="#btnSignupAction" prefHeight="33.0" prefWidth="85.0" style="-fx-background-color: #0b847a;" text="Sign up" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

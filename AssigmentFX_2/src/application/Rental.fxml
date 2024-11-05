@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="900.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RentalController">
+   <children>
+      <TableView fx:id="tbData" layoutY="251.0" prefHeight="217.0" prefWidth="900.0">
+        <columns>
+          <TableColumn fx:id="carRentalId" prefWidth="79.3333410024643" text="ID" />
+          <TableColumn fx:id="carId" prefWidth="71.33332061767578" text="Car ID" />
+            <TableColumn fx:id="carName" prefWidth="99.0" text="Car Name" />
+            <TableColumn fx:id="carModelYear" prefWidth="96.0" text="Car Model Year" />
+            <TableColumn fx:id="color" prefWidth="81.0" text="Color" />
+            <TableColumn fx:id="rentPrice" prefWidth="99.33340454101562" text="Rent Price" />
+            <TableColumn fx:id="pickupDate" prefWidth="91.99993896484375" text="Pickup Date" />
+            <TableColumn fx:id="returnDate" prefWidth="104.0" text="Return Date" />
+            <TableColumn fx:id="status" prefWidth="73.0" text="Status" />
+            <TableColumn fx:id="CustomerId" prefWidth="107.0" text="CustomerName" />
+          
+        </columns>
+      </TableView>
+      <ComboBox fx:id="txtCustomer" layoutX="146.0" layoutY="85.0" prefWidth="150.0" />
+      <DatePicker fx:id="txtpickupDate" layoutX="539.0" layoutY="85.0" />
+      <DatePicker fx:id="txtreturnDate" layoutX="539.0" layoutY="131.0" />
+      <TextField fx:id="txtPrice" layoutX="146.0" layoutY="193.0" />
+      <Button fx:id="btnAdd" layoutX="96.0" layoutY="532.0" mnemonicParsing="false" onAction="#btnAddAction" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #33FFBA;" text="Add" />
+      <Button fx:id="btnComplete" layoutX="394.0" layoutY="532.0" mnemonicParsing="false" onAction="#btnCompleteAction" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #33FFBA;" text="Update status" />
+      <Button fx:id="btnCancel" layoutX="713.0" layoutY="532.0" mnemonicParsing="false" onAction="#btnCancelAction" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #33FFBA;" text="Cancel" />
+      <Label layoutX="53.0" layoutY="84.0" text="Customer">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="131.0" text="Car">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="427.0" layoutY="84.0" text="Pickup Date">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="427.0" layoutY="131.0" text="Return Date">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="193.0" text="Price">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="label" layoutX="405.0" layoutY="411.0" prefHeight="34.0" prefWidth="401.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="txtCar" layoutX="145.0" layoutY="131.0" prefWidth="150.0" />
+      <Label contentDisplay="CENTER" layoutX="343.0" layoutY="14.0" prefHeight="34.0" prefWidth="215.0" text="RENTING MANAGEMENT">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
